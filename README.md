@@ -1,5 +1,5 @@
 # Freya
-Freya is a virtual assistant written in Python for Windows.
+Freya is a virtual assistant written in Python for Windows. It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthesis. Why? Because I wanted her to work offline. I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate. I went with SAPI because it is easy to use in Python (<a href="https://github.com/areebbeigh/winspeech">winspeech</a>) and the one awesome feature the Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a personal assistant like Freya.
 
 ##Previews
 **YouTube Demo:** Coming soon <br>
@@ -59,7 +59,6 @@ Example config:
     "GENDER": "male",
     "MUSIC_DIRECTORY": "C:\\Users\\Areeb\\Desktop\\Music",
     "NEWS_FEED": ["C:/Users/Areeb/Desktop/tech_feed.xml", "C:/Users/Areeb/Desktop/news_feed.xml"],
-    "ZIPCODE": 190005
   }
 }
 ```
@@ -69,13 +68,35 @@ So what the heck is that? We'll see it part by part, the configuration is in JSO
 ####Phrases
 The `phrases` configuration goes like this:
 
-[callback_method]:[list of trigger phrases]. 
+[callback_method name]:[list of trigger phrases]. 
 
 All the callback methods are defined in `callback.callback`.
 
 The trigger phrases that begin with an asterisk `*` are triggered both independently and when the `TRIGGER_KEYWORD` is said before. For example in the configuration above the method `play_music()` will be triggered by both phrases "play music" and "freya play music".
 
 **NOTE: Some of the in-built commands in the configuration require certain values to be defined in <a href="#preferences">preferences</a>.**
+
+###Preferences
+Here you can somewhat customize Freya.
+
+<table>
+<thead><th>Preference</th><th>Summary</th><th>Values</th></thead>
+<tr><td>TRIGGER_KEYWORD</td> <td>Essentially the assistant's name.</td> <td>Any string</td></tr>
+<tr><td>PRIND_COMMANDS_ON_START</td> <td>Whether to print a list of available commands on start.</td> <td>True/False</td>
+<tr><td>PRIND_SUBTITLES</td> <td>Whether or not to print whatever Freya says.</td> <td>True/False</td>
+<tr><td>GENDER</td> <td>Your gender.</td> <td>Male/Female</td>
+<tr><td>MUSIC_DIRECTORY</td> <td>The directory you want to play music files from when play_music() is called.</td> <td>A valid directory</td>
+<tr><td>NEWS_FEED</td> <td>Any feed online resource compatible with feedparser that'll be "casted" when newscaster() is called.</td> <td>Any feed resource</td>
+</table>
+
+###Training Microsoft Speech Recognition
+Ok so you configured Freya and now you're ready to go! But wait if you haven't already trained Microsoft Speech Recognition you'll probably fail everytime you say a command to Freya. It's easy to train Microsoft Speech Recognition.
+
+Here are a few tutorials:
+<ul>
+<li><a href="http://www.thewindowsclub.com/windows-speech-recognition-voice-training">Make Windows better understand your voice using Speech Recognition Voice Training</a></li>
+<li><a href="http://www.howtogeek.com/177539/how-to-get-started-with-speech-recognition-on-windows-7-or-8/">How to Get Started With Speech Recognition on Windows 7 or 8</a> (Windows 10 as well)</li>
+</ul>
 
 ###Adding Custom Commands
 You can add custom commands to Freya, all you have to do is define a call back method in `callback.callback` and add it to the configuration like the rest.
