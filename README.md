@@ -18,7 +18,7 @@ I tried other speech recognition libraries like CMU Sphinx but they weren't so a
 </ul>
 
 ##Setup
-Once you've isntalled all the dependencies above you should be able to run `freya.py` without any problems. You might want to change the
+Once you've installed all the dependencies above you should be able to run `freya.py` without any problems. You might want to change the
 default configuration though.
 
 ###Configuration
@@ -152,7 +152,7 @@ That's it. You added your first custom command to Freya :smile:.
 
 
 ##Contributing
-Fork, code and PR, I'll be waiting!
+Found a bug? something to improve? or just a typo? -> Fork, code/correct and PR! I'll be waiting!
 
 ##Additional Info
 **Developers**: Areeb Beigh <areebbeigh@gmail.com> <br>
