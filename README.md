@@ -4,9 +4,9 @@ Freya is a virtual assistant written in Python for Windows.
 I started working on Freya as a personal project (who doesn't want a Jarvis of his/her own??) and currently it's only in its initial stages. It may not be as efficient as the other assistants avaialable out there such as W.I.L.L or Athena yet but it "gets stuff done".
 
 It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthesis. Why? Because I wanted her to work offline. 
-I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate. I went with SAPI because it is easy to use in Python (<a href="https://github.com/areebbeigh/winspeech">winspeech</a>) and the one awesome feature the Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a personal assistant like Freya.
+I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate. I went with SAPI because it is easy to use in Python (<a href="https://github.com/areebbeigh/winspeech">winspeech</a>) and the one awesome feature Windows Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a personal assistant like Freya.
 
-##Previews
+##Videos
 **YouTube Demo:** Coming soon <br>
 **YouTube Setup Tutorial**: Coming soon
 
