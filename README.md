@@ -104,7 +104,7 @@ Here are a few tutorials:
 </ul>
 
 ###The Speech Dictionary
-Now you've setup Speech Recognition. Unless computers love your accent, you'll have to add a few words to your Windows **Speech Dictionary**. Sometimes when you say a phrase Speech Recognition doesn't recognize it correctly even after training it. For this you can record a pronounciation of that word in the Speech Dictionary.
+Now you've setup Speech Recognition. Unless computers love your accent, you'll have to add a few words to your Windows **Speech Dictionary**. Sometimes when you say a phrase Speech Recognition doesn't recognize it correctly even after training it. For this you can record a pronunciation of that word in the Speech Dictionary.
 
 Here's how I do it:
 <ol>
@@ -112,8 +112,8 @@ Here's how I do it:
 <li>Say "Open Speech Dictionary".</li>
 <li>A window should pop up with a few options, select "Add a new word".</li>
 <li>Type in the word and press Next.</li>
-<li>Check "Record a pronounciation on finish".</li>
-<li>Record a pronounciation of the word.</li>
+<li>Check "Record a pronunciation on finish".</li>
+<li>Record a pronunciation of the word.</li>
 </ol>
 
 ###Adding Custom Commands
