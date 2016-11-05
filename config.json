@@ -1,0 +1,42 @@
+{
+  "phrases": {
+    "play_music": [
+      "*play music",
+      "*let's have some music"
+    ],
+    "say_time": [
+      "*tell me the time",
+      "*what's the time",
+      "*what is the time"
+    ],
+    "mute_pc": [
+      "freya mute"
+    ],
+    "unmute_pc": [
+      "freya unmute"
+    ],
+    "reduce_volume": [
+      "*reduce volume",
+      "*volume down"
+    ],
+    "increase_volume": [
+      "*increase volume",
+      "*volume up"
+    ],
+    "newscaster": [
+      "*news"
+    ],
+    "stop_talking": [
+      "*stop talking"
+    ]
+  },
+
+  "preferences": {
+    "TRIGGER_KEYWORD": "freya",
+    "PRINT_COMMANDS_ON_START": "True",
+    "PRINT_SUBTITLES": "True",
+    "GENDER": "male",
+    "MUSIC_DIRECTORY": "C:\\Users\\Areeb\\Desktop\\Music",
+    "NEWS_FEED": ["http://rss.cnn.com/rss/edition.rss"]
+  }
+}
