@@ -76,7 +76,7 @@ The trigger phrases that begin with an asterisk `*` are triggered both independe
 
 **NOTE: Some of the in-built commands in the configuration require certain values to be defined in <a href="#preferences">preferences</a>.**
 
-###Preferences
+####Preferences
 Here you can somewhat customize Freya.
 
 <table>
@@ -100,3 +100,10 @@ Here are a few tutorials:
 
 ###Adding Custom Commands
 You can add custom commands to Freya, all you have to do is define a call back method in `callback.callback` and add it to the configuration like the rest.
+
+##Contributing
+Fork, code and PR, I'll be waiting!
+
+##Additional Info
+**Developers**: Areeb Beigh <areebbeigh@gmail.com>
+**GitHub Repo:** https://github.com/areebbeigh/Freya
