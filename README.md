@@ -63,7 +63,7 @@ Example config:
     "PRINT_SUBTITLES": "True",
     "GENDER": "male",
     "MUSIC_DIRECTORY": "C:\\Users\\Areeb\\Desktop\\Music",
-    "NEWS_FEED": ["C:/Users/Areeb/Desktop/tech_feed.xml", "C:/Users/Areeb/Desktop/news_feed.xml"],
+    "NEWS_FEED": ["http://rss.cnn.com/rss/edition.rss", "http://rss.cnn.com/rss/edition_world.rss"],
   }
 }
 ```
