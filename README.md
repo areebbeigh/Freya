@@ -90,13 +90,26 @@ Here you can somewhat customize Freya.
 </table>
 
 ###Training Microsoft Speech Recognition
-Ok so you configured Freya and now you're ready to go! But wait if you haven't already trained Microsoft Speech Recognition you'll probably fail everytime you say a command to Freya. It's easy to train Microsoft Speech Recognition.
+Ok so you configured Freya and now you're ready to go! But wait if you haven't already trained Microsoft Speech Recognition Freya will probably fail everytime you say a command to her. It's easy to train Microsoft Speech Recognition.
 
 Here are a few tutorials:
 <ul>
 <li><a href="http://www.thewindowsclub.com/windows-speech-recognition-voice-training">Make Windows better understand your voice using Speech Recognition Voice Training</a></li>
 <li><a href="http://www.howtogeek.com/177539/how-to-get-started-with-speech-recognition-on-windows-7-or-8/">How to Get Started With Speech Recognition on Windows 7 or 8</a> (Windows 10 as well)</li>
 </ul>
+
+###The Speech Dictionary
+Now you've setup Speech Recognition. Unless computers love your accent, you'll have to add a few words to your Windows **Speech Dictionary**. Sometimes when you say a phrase Speech Recognition doesn't recognize it correctly even after training it. For this you can record a pronounciation of that word in the Speech Dictionary.
+
+Here's how I do it:
+<ol>
+<li>Open Speech Recognition.</li>
+<li>Say "Open Speech Dictionary".</li>
+<li>A window should pop up with a few options, select "Add a new word".</li>
+<li>Type in the word and press Next.</li>
+<li>Check "Record a pronounciation on finish".</li>
+<li>Record a pronounciation of the word.</li>
+</ol>
 
 ###Adding Custom Commands
 You can add custom commands to Freya, all you have to do is define a call back method in `callback.callback` and add it to the configuration like the rest.
@@ -105,5 +118,5 @@ You can add custom commands to Freya, all you have to do is define a call back m
 Fork, code and PR, I'll be waiting!
 
 ##Additional Info
-**Developers**: Areeb Beigh <areebbeigh@gmail.com>
+**Developers**: Areeb Beigh <areebbeigh@gmail.com> <br>
 **GitHub Repo:** https://github.com/areebbeigh/Freya
