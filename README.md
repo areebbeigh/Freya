@@ -75,7 +75,7 @@ The `phrases` configuration goes like this:
 
 [callback_method name]:[list of trigger phrases]. 
 
-All the callback methods are defined in `callback.callback`.
+All the callback methods are defined in `callbacks.callbacks`.
 
 The trigger phrases that begin with an asterisk `*` are triggered both independently and when the `TRIGGER_KEYWORD` is said before. For example in the configuration above the method `play_music()` will be triggered by both phrases "play music" and "freya play music".
 
@@ -117,7 +117,39 @@ Here's how I do it:
 </ol>
 
 ###Adding Custom Commands
-You can add custom commands to Freya, all you have to do is define a call back method in `callback.callback` and add it to the configuration like the rest.
+You can add custom commands to Freya, all you have to do is define a call back method in `callbacks.callbacks` and add it to the configuration like the rest.
+
+Let's add a commands "foo" and "foo bar" to Freya which result in the same action.
+
+Every command executes a callback method in callbacks.callbacks and every callback method takes two argumets (see the <a href="https://pythonhosted.org/winspeech/">winspeech documentation</a>)
+
+<ul>
+<li>phrase - The phrase that triggered the callback</li>
+<li>listener - A listener object</li>
+</ul>
+
+Most of the times you wont need to work with them so they're just dummies.
+
+We'll call our callback `bar`. We'll add this to `callbacks.callbacks`:
+
+```
+...
+def bar(p, l):
+  print("It works!")
+```
+
+Now we add the following to the `phrases` in `config.json`:
+
+```
+...
+"bar": [
+  "foo",
+  "foo bar"
+]
+```
+
+That's it. You added your first custom command to Freya :smile:.
+
 
 ##Contributing
 Fork, code and PR, I'll be waiting!
