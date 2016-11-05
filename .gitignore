@@ -1,6 +1,10 @@
 # IDE
 .idea
 
+# Playlist
+
+playlist.m3u
+
 # Compiled
 *.pyc
 
