@@ -158,7 +158,8 @@ You can add custom commands to Freya, all you have to do is define a call back m
 
 Let's add a commands "foo" and "foo bar" to Freya which result in the same action.
 
-Every command executes a callback method in callbacks.callbacks and every callback method takes two argumets (see the <a href="https://pythonhosted.org/winspeech/">winspeech documentation</a>)
+Every command executes a callback method in callbacks.callbacks and every callback method takes two argumets
+(see `the winspeech documentation <https://pythonhosted.org/winspeech/>`_)
 
 - phrase - The phrase that triggered the callback
 - listener - A listener object
