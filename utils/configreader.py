@@ -35,7 +35,7 @@ for key, value in _config_object.items():
                     if isinstance(string, str):
                         v[v.index(string)] = string.lower()
     except Exception as e:
-        pass
+        continue
 
 
 def get_phrases():
