@@ -92,7 +92,7 @@ Here you can somewhat customize Freya.
 <tr><td>PRIND_SUBTITLES</td> <td>Whether or not to print whatever Freya says.</td> <td>True/False</td>
 <tr><td>GENDER</td> <td>Your gender.</td> <td>Male/Female</td>
 <tr><td>MUSIC_DIRECTORY</td> <td>The directory you want to play music files from when play_music() is called.</td> <td>A valid directory</td>
-<tr><td>NEWS_FEED</td> <td>Any feed online resource compatible with feedparser that'll be "casted" when newscaster() is called.</td> <td>Any feed resource</td>
+<tr><td>NEWS_FEED</td> <td>Any feed online resource compatible with feedparser that'll be read aloud when newscaster() is called.</td> <td>Any feed resource</td>
 </table>
 
 ###Training Microsoft Speech Recognition
