@@ -15,6 +15,7 @@ I tried other speech recognition libraries like CMU Sphinx but they weren't so a
 <li><a href="https://pypi.python.org/pypi/winspeech">winspeech</a></li>
 <li><a href="https://sourceforge.net/projects/pywin32/files/pywin32/">pywin32</a></li>
 <li><a href="https://pypi.python.org/pypi/feedparser/5.2.1">feedparser</a></li>
+<li><a href="http://pypi.python.org/pypi/comtypes">comtypes</a></li>
 </ul>
 
 ##Setup
