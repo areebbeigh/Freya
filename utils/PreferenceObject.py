@@ -30,8 +30,14 @@ class PreferenceObject:
     def get_search_engine(self):
         return self.preferences["SEARCH_ENGINE"]
 
+    # TODO: Intended for getting weather updates from an online API, haven't implemented it yet.
+    '''
     def get_zipcode(self):
         return self.preferences["ZIPCODE"]
+    '''
+
+    def get_print_cmds_on_start(self):
+        return True if self.preferences["PRINT_COMMANDS_ON_START"] == "true" else False
 
     def get_print_subtitle(self):
         return True if self.preferences["PRINT_SUBTITLES"] == "true" else False

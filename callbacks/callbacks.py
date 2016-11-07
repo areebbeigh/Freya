@@ -1,5 +1,5 @@
 """
-Callback functions for voice commands - the real thing! And also a few other functions
+Callback functions for voice commands - the real thing! And also a few other supporting functions
 
    Copyright 2016 Areeb Beigh
 
@@ -83,11 +83,12 @@ def _get_positive_response():
 def respond(phrase, prepend_positive_response=False, override_subtitle=False, say_wait=False):
     """
     Call this method to make Freya respond
+
     Parameters:
-        phrase: The phrase to say.
-        prepend_positive_response: A boolean denoting whether or not to prepend a positive response to the phrase. False by default.
-        override_subtitle: If true the subtitle will be printed not matter what the preference is set to. Use it wisely.
-        say_wait: Will use the customized winspeech module's say_wait() method instead of say()
+            phrase: The phrase to say.
+            prepend_positive_response: A boolean denoting whether or not to prepend a positive response to the phrase. False by default.
+            override_subtitle: If true the subtitle will be printed not matter what the preference is set to. Use it wisely.
+            say_wait: Will use the customized winspeech module's say_wait() method instead of say()
     """
     if prepend_positive_response:
         phrase = _get_positive_response() + " " + phrase
@@ -199,8 +200,8 @@ def reduce_volume(p, l):
     elif new_volume < MIN_VOLUME:
         new_volume = MIN_VOLUME
 
-    print("Current volume", current_volume)
-    print("New volume: ", new_volume)
+    print("Current volume:", current_volume)
+    print("New volume:", new_volume)
 
     volume.set_volume(new_volume)
 
@@ -222,8 +223,8 @@ def increase_volume(p, l):
     elif new_volume < MIN_VOLUME:
         new_volume = MIN_VOLUME
 
-    print("Current volume", current_volume)
-    print("New volume: ", new_volume)
+    print("Current volume:", current_volume)
+    print("New volume:", new_volume)
 
     volume.set_volume(new_volume)
 

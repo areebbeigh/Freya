@@ -23,7 +23,7 @@ from utils import configreader
 
 TRIGGER_KEYWORD = configreader.get_preferences().get_trigger_keyword()
 raw_phrases = configreader.get_phrases()
-reverse = {tuple(value): key for key, value in raw_phrases.items()}
+reverse = {tuple(phrase_tuple): callback_method for callback_method, phrase_tuple in raw_phrases.items()}
 phrases = {}  # {<phrases>:<callback function name string>}
 
 

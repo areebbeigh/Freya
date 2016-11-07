@@ -31,4 +31,4 @@ class NewsFeedParser(HTMLParser):
         pass
 
     def handle_data(self, data):
-        self.data_list.append(data)
+        self.data_list.append(data.strip())
