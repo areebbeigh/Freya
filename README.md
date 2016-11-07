@@ -7,8 +7,8 @@ It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthe
 I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate. I went with SAPI because it is easy to use in Python (<a href="https://github.com/areebbeigh/winspeech">winspeech</a>) and the one awesome feature Windows Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a personal assistant like Freya.
 
 ##Videos
-**YouTube Demo:** Coming soon <br>
-**YouTube Setup Tutorial**: Coming soon
+**YouTube Demo:** Pending <br>
+**YouTube Setup Tutorial**: Pending
 
 ##Dependencies
 <ul>
@@ -156,5 +156,5 @@ That's it. You added your first custom command to Freya :smile:.
 Found a bug? something to improve? or just a typo? -> Fork, code/correct and PR! I'll be waiting!
 
 ##Additional Info
-**Developers**: Areeb Beigh <areebbeigh@gmail.com> <br>
+**Developer**: Areeb Beigh <areebbeigh@gmail.com> <br>
 **GitHub Repo:** https://github.com/areebbeigh/Freya
