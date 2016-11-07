@@ -16,17 +16,18 @@ Run Freya.
    limitations under the License.
 """
 
-
 import time
 import winspeech
 
 from speech import speechutils
-from utils.configreader import get_preferences
+from utils.configreader import get_preferences, get_phrases
 
 
 def main():
     hour = time.localtime().tm_hour
-    title = get_preferences().get_user_title()  # mam? sir?
+    preferences = get_preferences()
+    title = preferences.get_user_title()  # mam? sir?
+    print_cmds = preferences.get_print_cmds_on_start()
 
     if hour < 12:
         greeting = "Good morning {},".format(title)
@@ -36,6 +37,15 @@ def main():
     winspeech.say(greeting + " what can I do for you?")
     speechutils.initialize()
     print("Freya is ready to take commands!")
+
+    if print_cmds:
+        print("Available commands:")
+        phrases = get_phrases()
+
+        for callback, phrase_list in phrases.items():
+            print(callback + ":")
+            for phrase in phrase_list:
+                print("\t" + phrase)
 
     while winspeech.is_listening():
         pass
