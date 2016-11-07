@@ -7,14 +7,15 @@ It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthe
 I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate. I went with SAPI because it is easy to use in Python (<a href="https://github.com/areebbeigh/winspeech">winspeech</a>) and the one awesome feature Windows Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a personal assistant like Freya.
 
 ##Videos
-**YouTube Demo:** Coming soon <br>
-**YouTube Setup Tutorial**: Coming soon
+**YouTube Demo:** Pending <br>
+**YouTube Setup Tutorial**: Pending
 
 ##Dependencies
 <ul>
 <li><a href="https://pypi.python.org/pypi/winspeech">winspeech</a></li>
 <li><a href="https://sourceforge.net/projects/pywin32/files/pywin32/">pywin32</a></li>
 <li><a href="https://pypi.python.org/pypi/feedparser/5.2.1">feedparser</a></li>
+<li><a href="http://pypi.python.org/pypi/comtypes">comtypes</a></li>
 </ul>
 
 ##Setup
@@ -63,7 +64,7 @@ Example config:
     "PRINT_SUBTITLES": "True",
     "GENDER": "male",
     "MUSIC_DIRECTORY": "C:\\Users\\Areeb\\Desktop\\Music",
-    "NEWS_FEED": ["C:/Users/Areeb/Desktop/tech_feed.xml", "C:/Users/Areeb/Desktop/news_feed.xml"],
+    "NEWS_FEED": ["http://rss.cnn.com/rss/edition.rss", "http://rss.cnn.com/rss/edition_world.rss"],
   }
 }
 ```
@@ -104,7 +105,7 @@ Here are a few tutorials:
 </ul>
 
 ###The Speech Dictionary
-Now you've setup Speech Recognition. Unless computers love your accent, you'll have to add a few words to your Windows **Speech Dictionary**. Sometimes when you say a phrase Speech Recognition doesn't recognize it correctly even after training it. For this you can record a pronounciation of that word in the Speech Dictionary.
+Now you've setup Speech Recognition. Unless computers love your accent, you'll have to add a few words to your Windows **Speech Dictionary**. Sometimes when you say a phrase Speech Recognition doesn't recognize it correctly even after training it. For this you can record a pronunciation of that word in the Speech Dictionary.
 
 Here's how I do it:
 <ol>
@@ -112,8 +113,8 @@ Here's how I do it:
 <li>Say "Open Speech Dictionary".</li>
 <li>A window should pop up with a few options, select "Add a new word".</li>
 <li>Type in the word and press Next.</li>
-<li>Check "Record a pronounciation on finish".</li>
-<li>Record a pronounciation of the word.</li>
+<li>Check "Record a pronunciation on finish".</li>
+<li>Record a pronunciation of the word.</li>
 </ol>
 
 ###Adding Custom Commands
@@ -155,5 +156,5 @@ That's it. You added your first custom command to Freya :smile:.
 Found a bug? something to improve? or just a typo? -> Fork, code/correct and PR! I'll be waiting!
 
 ##Additional Info
-**Developers**: Areeb Beigh <areebbeigh@gmail.com> <br>
+**Developer**: Areeb Beigh <areebbeigh@gmail.com> <br>
 **GitHub Repo:** https://github.com/areebbeigh/Freya
