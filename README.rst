@@ -133,8 +133,8 @@ Ok so you configured Freya and now you're ready to go! But wait if you haven't a
 
 Here are a few tutorials:
 
-`Make Windows better understand your voice using Speech Recognition Voice Training: <http://www.thewindowsclub.com/windows-speech-recognition-voice-training>`_
-`How to Get Started With Speech Recognition on Windows 7 or 8 (Windows 10 as well): <http://www.howtogeek.com/177539/how-to-get-started-with-speech-recognition-on-windows-7-or-8/>`_
+- `Make Windows better understand your voice using Speech Recognition Voice Training: <http://www.thewindowsclub.com/windows-speech-recognition-voice-training>`_
+- `How to Get Started With Speech Recognition on Windows 7 or 8 (Windows 10 as well): <http://www.howtogeek.com/177539/how-to-get-started-with-speech-recognition-on-windows-7-or-8/>`_
 
 ---------------------
 The Speech Dictionary
