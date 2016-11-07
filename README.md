@@ -153,7 +153,7 @@ That's it. You added your first custom command to Freya :smile:.
 
 
 ##Contributing
-Found a bug? something to improve? or just a typo? -> Fork, code/correct and PR! I'll be waiting!
+Got something of your own to add? Found a bug? something to improve? or just a typo? -> Fork, code/correct and PR! I'll be waiting!
 
 ##Additional Info
 **Developer**: Areeb Beigh <areebbeigh@gmail.com> <br>
