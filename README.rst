@@ -3,12 +3,17 @@ Freya
 
 Freya is a virtual assistant written in Python for Windows. 
 
-I started working on Freya as a personal project (who doesn't want a Jarvis of his/her own??) and currently it's only in its initial stages. It may not be as efficient as the other assistants avaialable out there such as W.I.L.L or Athena yet, but it "gets stuff done".
+I started working on Freya as a personal project (who doesn't want a Jarvis of his/her own??) and
+currently it's only in its initial stages. It may not be as efficient as the other assistants
+available out there such as W.I.L.L or Athena yet, but it "gets stuff done".
 
-It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthesis. Why? Because I wanted her to work offline. 
+It (She?) uses the Microsoft Speech API (SAPI) for speech recognition and synthesis.
+Why? Because I wanted her to work offline.
 I tried other speech recognition libraries like CMU Sphinx but they weren't so accurate.
-I went with SAPI because it is easy to use in Python (`winspeech module <https://github.com/areebbeigh/winspeech>`_) and the one awesome feature Windows Speech Recognition has is that you can "train" it to understand you better.
-So it's ideal for a personal assistant like Freya.
+I went with SAPI because it is easy to use in Python
+(`winspeech module <https://github.com/areebbeigh/winspeech>`_) and the one awesome feature Windows
+Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a
+personal assistant like Freya.
 
 Videos
 ------
@@ -26,8 +31,8 @@ Dependencies
 Setup
 -----
 
-Once you've installed all the dependencies above you should be able to run ``freya.py`` without any problems. You might want to change the
-default configuration though.
+Once you've installed all the dependencies above you should be able to run ``freya.py`` without any
+problems. You might want to change the default configuration though.
 
 -------------
 Configuration
@@ -91,7 +96,8 @@ The ``phrases`` configuration goes like this:
 
 All the callback methods are defined in ``callbacks.callbacks``.
 
-The trigger phrases that begin with an asterisk `*` are triggered both independently and when the ``TRIGGER_KEYWORD`` is said before. For example in the configuration above the method ``play_music()`` will be triggered by both phrases "play music" and "freya play music".
+The trigger phrases that begin with an asterisk `*` are triggered both independently and when the ``TRIGGER_KEYWORD`` is said before.
+For example in the configuration above the method ``play_music()`` will be triggered by both phrases "play music" and "freya play music".
 
 **NOTE: Some of the in-built commands in the configuration require certain values to be defined in preferences.**
 
@@ -154,7 +160,8 @@ Here's how I do it:
 ----------------------
 Adding Custom Commands
 ----------------------
-You can add custom commands to Freya, all you have to do is define a call back method in ``callbacks.callbacks`` and add it to the configuration like the rest.
+You can add custom commands to Freya, all you have to do is define a call back method in
+``callbacks.callbacks`` and add it to the configuration like the rest.
 
 Let's add a commands "foo" and "foo bar" to Freya which result in the same action.
 
@@ -166,7 +173,7 @@ Every command executes a callback method in callbacks.callbacks and every callba
 
 Most of the times you wont need to work with them so they're just dummies.
 
-We'll call our callback ``bar``. We'll add this to `callbacks.callbacks`:
+We'll call our callback ``bar``. We'll add this to ``callbacks.callbacks``:
 
 ::
 
