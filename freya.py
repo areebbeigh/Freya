@@ -39,13 +39,19 @@ def main():
     print("Freya is ready to take commands!")
 
     if print_cmds:
-        print("Available commands:")
-        phrases = get_phrases()
+        print("Available commands:\n")
+        phrase_dict = get_phrases()
+        phrases = []
 
-        for callback, phrase_list in phrases.items():
-            print(callback + ":")
-            for phrase in phrase_list:
-                print("\t" + phrase)
+        for phrase_list in phrase_dict.values():
+            phrases.extend(phrase_list)
+
+        phrases.sort()
+
+        for phrase in phrases:
+            print("\t" + phrase)
+
+        print()
 
     while winspeech.is_listening():
         pass
