@@ -94,7 +94,7 @@ def respond(phrase, prepend_positive_response=False, override_subtitle=False, sa
         phrase = _get_positive_response() + " " + phrase
     phrase = phrase.lower().capitalize()  # Fix stuff
     if preferences.get_print_subtitle():
-        print("Freya: " + phrase)
+        print("Freya: " + phrase + "\n")
     if say_wait:
         winspeech.say_wait(phrase)
         return
@@ -111,7 +111,7 @@ def default_listener(input_phrase, listener):
 
     # Very crude at the moment
     input_phrase = input_phrase.lower()
-    print("DEBUG:", input_phrase)
+    #print("DEBUG:", input_phrase)
 
     responses = {
         ("hey freya", "hello freya", "good evening freya", "good morning freya"): ("hello " + title,),
