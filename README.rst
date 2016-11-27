@@ -113,13 +113,11 @@ Here you can somewhat customize Freya.
 +==========================+============================================+========================+
 | TRIGGER_KEYWORD          | Essentially the assistant's name.          | Any string             |
 +--------------------------+--------------------------------------------+------------------------+
-| PRIND_COMMANDS_ON_START  |  Whether to print a list of available      | True/False             |
+| PRINT_COMMANDS_ON_START  |  Whether to print a list of available      | True/False             |
 |                          |  commands on start.                        |                        |
 +--------------------------+--------------------------------------------+------------------------+
-| PRIND_SUBTITLES          | Whether or not to print whatever Freya     | True/False             |
+| PRINT_SUBTITLES          | Whether or not to print whatever Freya     | True/False             |
 |                          | says.                                      |                        |
-+--------------------------+--------------------------------------------+------------------------+
-| GENDER                   | Your gender.                               | Male/Female            |
 +--------------------------+--------------------------------------------+------------------------+
 | GENDER                   | Your gender.                               | Male/Female            |
 +--------------------------+--------------------------------------------+------------------------+
