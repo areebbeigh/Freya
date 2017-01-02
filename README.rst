@@ -1,8 +1,6 @@
 Freya
 =====
 
-**Note: I'll probably remake Freya with a better interface and maybe with a minimal NLUI. Busy with school for now.**
-
 Freya is a virtual assistant written in Python for Windows. 
 
 I started working on Freya as a personal project (who doesn't want a Jarvis of his/her own??) and
