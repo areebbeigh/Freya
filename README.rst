@@ -15,10 +15,10 @@ I went with SAPI because it is easy to use in Python
 Speech Recognition has is that you can "train" it to understand you better. So it's ideal for a
 personal assistant like Freya.
 
-Videos
-------
-| **YouTube Demo:** Pending
-| **YouTube Setup Tutorial**: Pending
+Demo
+----
+
+- `My Virtual Assistant - Freya [YouTube] <https://www.youtube.com/watch?v=sqXG_pwpmi8>`_
 
 Dependencies
 ------------
